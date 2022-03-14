@@ -5,6 +5,7 @@ function home1() {
     <Fragment>
       <div>home1 + in master</div>
       <div>home1 + in seng branch</div>
+      <div>home1 + in master 2</div>
     </Fragment>
   );
 }
