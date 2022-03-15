@@ -12,6 +12,7 @@ function home1() {
       <div>home1 + in master 6</div>
       <div>home1 + in seng 6</div>
       <div>home1 + in master 7</div>
+      <div>home1 + in master 8</div>
     </Fragment>
   );
 }
