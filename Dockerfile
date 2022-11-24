@@ -1,10 +1,12 @@
 FROM node:alpine
 
-COPY ./ ./
+COPY . ./
 
 RUN npm install --force
 
 RUN npm run build
+
+RUN ls
 
 COPY ./build ./build
 
