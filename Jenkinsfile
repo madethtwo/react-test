@@ -1,8 +1,8 @@
 node("worker2"){
   checkout scm
-  tools{
-    nodejs '16.18.1'
-  }
+//   tools{
+//     nodejs '16.18.1'
+//   }
   stage("Build in Jenkins"){
     steps{
      echo "Build in Jenkins";
