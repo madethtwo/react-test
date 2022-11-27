@@ -4,17 +4,15 @@ node("worker2"){
 //     nodejs '16.18.1'
 //   }
   stage("Build in Jenkins"){
-    steps{
      echo "Build in Jenkins";
-       sh 'npm install --force';
-       sh 'npm run build';
-      }
+    docker.image("node:alpine").inside{
+      sh 'npm install --force';
+      sh 'npm run build';
+    }
    }
    stage("Docker Compose Stage"){
-        steps{
-            echo "Docker Compose Stage";
-                // sh 'docker compose down';
-                sh 'docker compose up -d --build';
-       }
+      echo "Docker Compose Stage";
+      // sh 'docker compose down';
+      sh 'docker compose up -d --build';
     }
 }
