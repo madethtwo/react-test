@@ -1,4 +1,4 @@
-node("worker2"){
+node{
   checkout scm
 //   tools{
 //     nodejs '16.18.1'
