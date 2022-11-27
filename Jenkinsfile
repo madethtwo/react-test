@@ -8,7 +8,8 @@ node{
     docker.image("node:16.18.1").inside{
       sh 'ls'
       sh 'pwd'
-      sh 'npm install';
+      sh 'node -v'
+      sh 'npm install --force';
       sh 'npm run build';
     }
    }
