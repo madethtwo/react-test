@@ -6,6 +6,8 @@ node("worker2"){
   stage("Build in Jenkins"){
      echo "Build in Jenkins";
     docker.image("node:16.18.1").inside{
+      sh 'ls'
+      sh 'pwd'
       sh 'npm install --force';
       sh 'npm run build';
     }
