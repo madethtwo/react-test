@@ -1,5 +1,5 @@
 node("worker2"){
-  checkout scm
+  //checkout scm
   stage("Build"){
     echo "Build Stage";
   }
