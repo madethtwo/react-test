@@ -1,11 +1,5 @@
-FROM node:16.18.1
+FROM nginx:alpine
 
-#COPY ./ ./
+COPY ./build /usr/share/nginx/html/build
 
-#RUN npm install --force
-
-#RUN npm run build
-
-COPY ./build ./build
-
-ENTRYPOINT ["npx", "serve", "-s", "build"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
