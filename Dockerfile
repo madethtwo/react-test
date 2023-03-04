@@ -1,5 +1,5 @@
 FROM nginx:alpine
 
-COPY ./build /usr/share/nginx/html/build
+COPY ./build /usr/share/nginx/html
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
