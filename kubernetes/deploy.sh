@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF > ./reactjs-app.yml
+cat << EOF > /home/dara/kuberntes/reactjs-app.yml
 
 apiVersion: apps/v1
 kind: Deployment
@@ -37,5 +37,5 @@ spec:
 EOF
 
 # Deploy with kubernetes
-kubectl apply -f ./reactjs-app.yml
+kubectl apply -f /home/dara/kuberntes/reactjs-app.yml
 
