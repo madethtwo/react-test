@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cat << EOF > ./kubernetes/reactjs-app.yml
+cat << EOF > ./reactjs-app.yml
 
 apiVersion: apps/v1
 kind: Deployment
@@ -36,3 +36,6 @@ spec:
       nodePort: 30002
       
 EOF >>
+# Deploy with kubernetes
+kubectl apply -f ./reactjs-app.yml
+
