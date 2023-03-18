@@ -33,9 +33,9 @@ spec:
   ports:
     - port: 80
       targetPort: 80
-      nodePort: 30002
-      
-EOF >>
+      nodePort: 30002   
+EOF
+
 # Deploy with kubernetes
 kubectl apply -f ./reactjs-app.yml
 
