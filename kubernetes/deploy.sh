@@ -25,7 +25,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: nginx-svc
+  name: reactjs-svc
 spec:
   type: NodePort
   selector:
